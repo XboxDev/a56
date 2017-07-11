@@ -84,7 +84,7 @@ ksubs.o:	subs.c
 lex.o:	lex.c gram.h
 
 kparse.c:	a56.key keybld
-	keybld < a56.key > kparse.c
+	$(abspath keybld) < a56.key > kparse.c
 
 gram.c gram.h:	a56.y
 	@echo "[expect 2 shift/reduce conflicts here]"
