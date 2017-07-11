@@ -1,0 +1,11 @@
+# Compilation results
+*.o
+/keybld
+/toomf
+/a56
+
+# Auto-generated files
+/toktab.c
+/gram.c
+/gram.h
+/kparse.c
