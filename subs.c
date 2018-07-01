@@ -30,8 +30,6 @@ static char *Copyright = "Copyright (C) 1990-1994 Quinn C. Jensen";
 
 #define MAX 1024
 
-char *alloc();
-
 FILE *open_read(file)
 char *file;
 {
@@ -117,8 +115,7 @@ register int stops;
 	return o;
 }
 
-char *alloc(size)
-int size;
+char *alloc(int size)
 {
 	char *p = (char *)malloc(size);
 	if(NOT p)
