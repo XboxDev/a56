@@ -58,6 +58,8 @@ struct sym {
 
 extern int pass;
 
+char *alloc(int size);
+
 #define NEW(object) ((object *)alloc(sizeof(object)))
 
 #define MAX_NEST 20		/* maximum include file nesting */
