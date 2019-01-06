@@ -24,7 +24,6 @@ static	char	sccsfid[] = "@(#) getopt.c 5.0 (UTZoo) 1985";
 #define	ENDARGS  "--"
 
 /* this is included because index is not on some UNIX systems */
-static
 char *
 index (s, c)
 register	char	*s;

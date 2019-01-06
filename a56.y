@@ -1799,7 +1799,11 @@ expr
 
 #include <stdio.h>
 #include <setjmp.h>
+#ifdef _WIN32
+#include <signal.h>
+#else
 #include <sys/signal.h>
+#endif
 
 int yydebug;
 
