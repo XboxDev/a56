@@ -1,0 +1,10 @@
+environment:
+  PATH: C:\msys64\mingw64\bin;C:\msys64\usr\bin;%PATH%
+configuration:
+- Release
+build_script:
+- cmd: make
+after_build:
+- cmd: 7z u %APPVEYOR_BUILD_FOLDER%\export\%CONFIGURATION%.zip a56.exe keybld.exe toomf.exe
+artifacts:
+- path: export/*.zip
