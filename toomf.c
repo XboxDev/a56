@@ -29,6 +29,8 @@ static char *Copyright = "Copyright (C) 1990-1994 Quinn C. Jensen";
  *
  */
 
+#include <stdio.h>
+
 #define MAX 256
 
 main(argc,argv)
@@ -41,7 +43,7 @@ char *argv[];
 	int curseg = '\0';
 	int startaddr = -1;
 
-	while(gets(buf)) {
+	while(fgets(buf, sizeof(buf), stdin)) {
 		char seg;
 		int addr, data;
 		line++;
