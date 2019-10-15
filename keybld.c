@@ -26,7 +26,7 @@ main()
 {
 	int line = 0;
 
-	while(gets(buf)) {
+	while(fgets(buf, sizeof(buf), stdin)) {
 		char *bp = buf;
 		line++;
 		while(*bp != '\t' && *bp != ' ') bp++;
